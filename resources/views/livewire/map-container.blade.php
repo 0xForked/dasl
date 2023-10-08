@@ -17,7 +17,11 @@
             window.location.href = "/dashboard";
         }
     })
-   
+
+    document.addEventListener('refresh-watersheds', () => {
+         // TODO: fix this
+        window.location.href = "/dashboard";
+    })
 
     var centerCoords = null  // handling re-render error
     centerCoords = [1.403175, 124.761776];
