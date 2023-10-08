@@ -12,6 +12,13 @@
 
 @once
 <script>
+    document.addEventListener('livewire:navigated', () => {
+       if (!window.L) {
+            window.location.href = "/dashboard";
+        }
+    })
+   
+
     var centerCoords = null  // handling re-render error
     centerCoords = [1.403175, 124.761776];
 
